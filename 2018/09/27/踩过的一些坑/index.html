@@ -1,17 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang=zh>
 <head>
-    <meta charset="utf-8" />
-
-    
-
+    <meta charset="utf-8">
     
     <title>踩过的一些坑 | Hexo</title>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    
-        <meta name="keywords" content="" />
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="Error: ssh_exchange_identification: read: Connection reset by peer今天早上到公司试了一下 hexo g 和 hexo d 命令，发现有这个问题， 123456789101112Error: ssh_exchange_identification: read: Connection reset by peerfatal: Could">
 <meta property="og:type" content="article">
 <meta property="og:title" content="踩过的一些坑">
@@ -33,13 +26,15 @@
 
     
 
-    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/libs/titillium-web/styles.css">
+    <link rel="stylesheet" href="/libs/font-awesome5/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/libs/font-awesome5/css/fa-brands.min.css">
+    <link rel="stylesheet" href="/libs/font-awesome5/css/fa-solid.min.css">
+    <link rel="stylesheet" href="/libs/open-sans/styles.css">
     <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
 
     <link rel="stylesheet" href="/css/style.css">
 
-    <script src="/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/libs/jquery/2.1.3/jquery.min.js"></script>
     
     
         <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
@@ -49,40 +44,45 @@
     
     
     
+    
 
 
 </head>
 
 <body>
-    <div id="wrap">
+    <div id="container">
         <header id="header">
-    <div id="header-outer" class="outer">
-        <div class="container">
-            <div class="container-inner">
-                <div id="header-title">
-                    <h1 class="logo-wrap">
-                        <a href="/" class="logo"></a>
-                    </h1>
-                    
-                </div>
-                <div id="header-inner" class="nav-container">
-                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
-                    <div class="nav-container-inner">
-                        <ul id="main-nav">
-                            
-                                <li class="main-nav-list-item" >
-                                    <a class="main-nav-list-link" href="/">主页</a>
-                                </li>
-                            
-                                        
-                                    
-                                <li class="main-nav-list-item" >
-                                    <a class="main-nav-list-link" href="/about/index.html">关于</a>
-                                </li>
-                            
-                        </ul>
-                        <nav id="sub-nav">
-                            <div id="search-form-wrap">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">Hexo</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/.">Home</a>
+                
+                    <a class="main-nav-link" href="/archives">Archives</a>
+                
+                    <a class="main-nav-link" href="/categories">Categories</a>
+                
+                    <a class="main-nav-link" href="/tags">Tags</a>
+                
+                    <a class="main-nav-link" href="/about">About</a>
+                
+            </nav>
+            
+                
+                <nav id="sub-nav">
+                    <div class="profile" id="profile-nav">
+                        <a id="profile-anchor" href="javascript:;">
+                            <img class="avatar" src="/css/images/avatar.png" />
+                            <i class="fas fa-caret-down"></i>
+                        </a>
+                    </div>
+                </nav>
+            
+            <div id="search-form-wrap">
 
     <form class="search-form">
         <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
@@ -93,7 +93,7 @@
     <div class="ins-search-container">
         <div class="ins-input-wrapper">
             <input type="text" class="ins-search-input" placeholder="想要查找什么..." />
-            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+            <span class="ins-close ins-selectable"><i class="fas fa-times-circle"></i></span>
         </div>
         <div class="ins-section-wrapper">
             <div class="ins-section-container"></div>
@@ -119,54 +119,134 @@
 <script src="/js/insight.js"></script>
 
 </div>
-                        </nav>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
-</header>
-        <div class="container">
-            <div class="main-body container-inner">
-                <div class="main-body-inner">
-                    <section id="main">
-                        <div class="main-body-header">
-    <h1 class="header">
-    
-    未分类
-    </h1>
-</div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/.">Home</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">Archives</a></td>
+                
+                    <td><a class="main-nav-link" href="/categories">Categories</a></td>
+                
+                    <td><a class="main-nav-link" href="/tags">Tags</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">About</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+    </div>
 
-                        <div class="main-body-content">
-                            <article id="post-踩过的一些坑" class="article article-single article-type-post" itemscope itemprop="blogPost">
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+                
+
+<aside id="profile" class="profile-fixed">
+    <div class="inner profile-inner">
+        <div class="base-info profile-block">
+            <img id="avatar" src="/css/images/avatar.png" />
+            <h2 id="name">PPOffice</h2>
+            <h3 id="title">Web Developer &amp; Designer</h3>
+            <span id="location"><i class="fas fa-map-marker-alt" style="padding-right: 5px"></i>Harbin, China</span>
+            <a id="follow" target="_blank" href="https://github.com/ppoffice/">关注我</a>
+        </div>
+        <div class="article-info profile-block">
+            <div class="article-info-block">
+                6
+                <span>文章</span>
+            </div>
+            <div class="article-info-block">
+                0
+                <span>标签</span>
+            </div>
+        </div>
+        
+        <div class="profile-block social-links">
+            <table>
+                <tr>
+                    
+                    
+                    <td>
+                        <a href="http://github.com/ppoffice/hexo-theme-icarus" target="_blank" title="github" class=tooltip>
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="twitter" class=tooltip>
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="facebook" class=tooltip>
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="dribbble" class=tooltip>
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="rss" class=tooltip>
+                            <i class="fab fa-rss"></i>
+                        </a>
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+</aside>
+
+            
+            <section id="main"><article id="post-踩过的一些坑" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
+        
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        踩过的一些坑
+            踩过的一些坑
         </h1>
     
 
-            </header>
-        
-        
-            <div class="article-meta">
                 
+                    <div class="article-meta">
+                        
     <div class="article-date">
-        <a href="/2018/09/27/踩过的一些坑/" class="article-date">
+        <i class="fas fa-calendar-alt"></i>
+        <a href="/2018/09/27/踩过的一些坑/">
             <time datetime="2018-09-27T03:13:41.000Z" itemprop="datePublished">2018-09-27</time>
         </a>
     </div>
 
-		
 
+                        
+                        
+                    </div>
                 
-            </div>
+            </header>
         
         
         <div class="article-entry" itemprop="articleBody">
+        
+            
             <h3 id="Error-ssh-exchange-identification-read-Connection-reset-by-peer"><a href="#Error-ssh-exchange-identification-read-Connection-reset-by-peer" class="headerlink" title="Error: ssh_exchange_identification: read: Connection reset by peer"></a><code>Error: ssh_exchange_identification: read: Connection reset by peer</code></h3><p>今天早上到公司试了一下 <code>hexo g</code> 和 <code>hexo d</code> 命令，发现有这个问题，</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">Error: ssh_exchange_identification: read: Connection reset by peer</span><br><span class="line">fatal: Could not read from remote repository.</span><br><span class="line"></span><br><span class="line">Please make sure you have the correct access rights</span><br><span class="line">and the repository exists.</span><br><span class="line"></span><br><span class="line">    at ChildProcess.&lt;anonymous&gt; (/Users/wdy/Documents/Blog/node_modules/hexo-util/lib/spawn.js:37:17)</span><br><span class="line">    at ChildProcess.emit (events.js:180:13)</span><br><span class="line">    at maybeClose (internal/child_process.js:936:16)</span><br><span class="line">    at Socket.stream.socket.on (internal/child_process.js:353:11)</span><br><span class="line">    at Socket.emit (events.js:180:13)</span><br><span class="line">    at Pipe._handle.close [as _onclose] (net.js:541:12)</span><br></pre></td></tr></table></figure>
 <p>我猜测可能是网络环境的改变带来的，于是将网络改为手机热点之后，就成功了，</p>
@@ -176,15 +256,24 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-depolyer-git</span><br><span class="line">npm install hexo --save</span><br><span class="line">hexo g</span><br><span class="line">npm install</span><br><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 <p><a href="https://github.com/hexojs/hexo/issues/1013" target="_blank" rel="noopener">参考</a></p>
 
+        
         </div>
         <footer class="article-footer">
-            
+            <div class="share-container">
 
 
 
-    <a data-url="http://joewang.github.io/2018/09/27/踩过的一些坑/" data-id="cjmkn5x8u00055uoqjkj2iumc" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+</div>
+
+    <a data-url="http://joewang.github.io/2018/09/27/踩过的一些坑/" data-id="cjmknvr2y000592oq88xubob0" class="article-share-link"><i class="fas fa-share"></i>分享到</a>
 <script>
     (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
         $('body').on('click', function() {
             $('.article-share-box.on').removeClass('on');
         }).on('click', '.article-share-link', function(e) {
@@ -209,10 +298,10 @@
                     '<div id="' + id + '" class="article-share-box">',
                         '<input class="article-share-input" value="' + url + '">',
                         '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fab fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fab fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fab fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fab fa-google article-share-google" target="_blank" title="Google+"></a>',
                         '</div>',
                     '</div>'
                 ].join('');
@@ -242,111 +331,46 @@
     })(jQuery);
 </script>
 
+            
+    
+
         </footer>
-    </div>
-</article>
-
-    <section id="comments">
-    
-        
-    <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    </div>
-
-    
-    </section>
-
-
-
-                        </div>
-                    </section>
-                    <aside id="sidebar">
-    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
-    <div class="sidebar-top">
-        <p>关注我 :</p>
-        <ul class="social-links">
-            
-                
-                <li>
-                    <a class="social-tooltip" title="twitter" href="/" target="_blank" rel="noopener">
-                        <i class="icon fa fa-twitter"></i>
-                    </a>
-                </li>
-                
-            
-                
-                <li>
-                    <a class="social-tooltip" title="facebook" href="/" target="_blank" rel="noopener">
-                        <i class="icon fa fa-facebook"></i>
-                    </a>
-                </li>
-                
-            
-                
-                <li>
-                    <a class="social-tooltip" title="google-plus" href="/" target="_blank" rel="noopener">
-                        <i class="icon fa fa-google-plus"></i>
-                    </a>
-                </li>
-                
-            
-                
-                <li>
-                    <a class="social-tooltip" title="github" href="https://github.com/ppoffice/hexo-theme-hueman" target="_blank" rel="noopener">
-                        <i class="icon fa fa-github"></i>
-                    </a>
-                </li>
-                
-            
-                
-                <li>
-                    <a class="social-tooltip" title="weibo" href="/" target="_blank" rel="noopener">
-                        <i class="icon fa fa-weibo"></i>
-                    </a>
-                </li>
-                
-            
-                
-                <li>
-                    <a class="social-tooltip" title="rss" href="/" target="_blank" rel="noopener">
-                        <i class="icon fa fa-rss"></i>
-                    </a>
-                </li>
-                
-            
-        </ul>
     </div>
     
         
 <nav id="article-nav">
     
         <a href="/2018/09/27/为什么要写Blog？/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">下一篇</strong>
-        <p class="article-nav-title">
-        
-            为什么要写Blog？
-        
-        </p>
-        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
-    </a>
+            <strong class="article-nav-caption">上一篇</strong>
+            <div class="article-nav-title">
+                
+                    为什么要写Blog？
+                
+            </div>
+        </a>
     
     
         <a href="/2018/09/27/Jekyll-Github/" id="article-nav-older" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">上一篇</strong>
-        <p class="article-nav-title">Jekyll + Github</p>
-        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+            <strong class="article-nav-caption">下一篇</strong>
+            <div class="article-nav-title">Jekyll + Github</div>
         </a>
     
 </nav>
 
-    
-    <div class="widgets-container">
-        
-            
-                
 
+    
+</article>
+
+
+    
+    
+
+</section>
             
                 
+<aside id="sidebar">
+   
+        
     <div class="widget-wrap">
         <h3 class="widget-title">最新文章</h3>
         <div class="widget">
@@ -359,7 +383,6 @@
     
     
         <span class="thumbnail-image thumbnail-none"></span>
-    
     
 </a>
 
@@ -380,7 +403,6 @@
     
         <span class="thumbnail-image thumbnail-none"></span>
     
-    
 </a>
 
                         </div>
@@ -398,8 +420,7 @@
                             <a href="/2018/09/27/踩过的一些坑/" class="thumbnail">
     
     
-        <span style="background-image:url(http://ww.sinaimg.cx/005zWjpngy1fvnxed620aj315k0r8ag1.jpg)" alt="踩过的一些坑" class="thumbnail-image"></span>
-    
+        <span class="thumbnail-image thumbnail-none"></span>
     
 </a>
 
@@ -418,8 +439,7 @@
                             <a href="/2018/09/27/Jekyll-Github/" class="thumbnail">
     
     
-        <span style="background-image:url(http://ww.sinaimg.cx/005zWjpngy1fvm4i5b0rcj316q0oiqbj.jpg)" alt="Jekyll + Github" class="thumbnail-image"></span>
-    
+        <span class="thumbnail-image thumbnail-none"></span>
     
 </a>
 
@@ -438,8 +458,7 @@
                             <a href="/2018/09/24/Hexo-GitHub-搭建个人网站/" class="thumbnail">
     
     
-        <span style="background-image:url(https://pic1.zhimg.com/80/v2-6890485c84748900d9dae824b7f7cbb1_hd.jpg)" alt="Hexo+GitHub 搭建个人网站" class="thumbnail-image"></span>
-    
+        <span class="thumbnail-image thumbnail-none"></span>
     
 </a>
 
@@ -456,27 +475,23 @@
         </div>
     </div>
 
-            
-                
-
-            
-                
-    <div class="widget-wrap widget-list">
+    
+        
+    
+        
+    <div class="widget-wrap">
         <h3 class="widget-title">归档</h3>
         <div class="widget">
             <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">6</span></li></ul>
         </div>
     </div>
 
-
-            
-                
-
-            
-                
-
-            
-                
+    
+        
+    
+        
+    
+        
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">链接</h3>
         <div class="widget">
@@ -491,53 +506,21 @@
     </div>
 
 
-            
-        
-    </div>
+    
+    <div id="toTop" class="fas fa-angle-up"></div>
 </aside>
 
-                </div>
-            </div>
+            
         </div>
         <footer id="footer">
-    <div class="container">
-        <div class="container-inner">
-            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
-            <div class="credit">
-                <h1 class="logo-wrap">
-                    <a href="/" class="logo"></a>
-                </h1>
-                <p>&copy; 2018 John Doe</p>
-                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
-            </div>
-            <div class="footer-plugins">
-              
-    
-
-
-            </div>
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2018 John Doe<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>
         </div>
     </div>
 </footer>
-
         
-    
-    <script>
-    var disqus_shortname = 'hexo-theme-hueman';
-    
-    
-    var disqus_url = 'http://joewang.github.io/2018/09/27/踩过的一些坑/';
-    
-    (function() {
-    var dsq = document.createElement('script');
-    dsq.type = 'text/javascript';
-    dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-    </script>
-
-
 
 
     
