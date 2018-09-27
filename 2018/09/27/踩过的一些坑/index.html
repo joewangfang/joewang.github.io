@@ -174,10 +174,13 @@
     </div>
     
     <div class="post-body post-content">
-        <p>今天早上到公司试了一下 <code>hexo g</code> 和 <code>hexo d</code> 命令，发现有这个问题，</p>
+        <h2 id="Error-ssh-exchange-identification-read-Connection-reset-by-peer"><a href="#Error-ssh-exchange-identification-read-Connection-reset-by-peer" class="headerlink" title="Error: ssh_exchange_identification: read: Connection reset by peer"></a><code>Error: ssh_exchange_identification: read: Connection reset by peer</code></h2><p>今天早上到公司试了一下 <code>hexo g</code> 和 <code>hexo d</code> 命令，发现有这个问题，</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">Error: ssh_exchange_identification: read: Connection reset by peer</span><br><span class="line">fatal: Could not read from remote repository.</span><br><span class="line"></span><br><span class="line">Please make sure you have the correct access rights</span><br><span class="line">and the repository exists.</span><br><span class="line"></span><br><span class="line">    at ChildProcess.&lt;anonymous&gt; (/Users/wdy/Documents/Blog/node_modules/hexo-util/lib/spawn.js:37:17)</span><br><span class="line">    at ChildProcess.emit (events.js:180:13)</span><br><span class="line">    at maybeClose (internal/child_process.js:936:16)</span><br><span class="line">    at Socket.stream.socket.on (internal/child_process.js:353:11)</span><br><span class="line">    at Socket.emit (events.js:180:13)</span><br><span class="line">    at Pipe._handle.close [as _onclose] (net.js:541:12)</span><br></pre></td></tr></table></figure>
 <p>我猜测可能是网络环境的改变带来的，于是将网络改为手机热点之后，就成功了，</p>
 <p><img src="http://ww.sinaimg.cx/005zWjpngy1fvnxed620aj315k0r8ag1.jpg" alt=""></p>
+<h2 id="hexo-d-命令报错ERROR-Deployer-not-found-git"><a href="#hexo-d-命令报错ERROR-Deployer-not-found-git" class="headerlink" title="hexo d 命令报错ERROR Deployer not found: git"></a><code>hexo d</code> 命令报错<code>ERROR Deployer not found: git</code></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"> ✘ ⚙ wdy@wdydeMacBook-Pro  ~/Documents/Joe  hexo d</span><br><span class="line">ERROR Deployer not found: git</span><br><span class="line"></span><br><span class="line"> ⚙ wdy@wdydeMacBook-Pro  ~/Documents/Joe  npm install hexo-deployer-Github --save</span><br><span class="line"></span><br><span class="line">npm ERR! code E404</span><br><span class="line">npm ERR! 404 Not Found: hexo-deployer-Github@latest</span><br><span class="line"></span><br><span class="line">npm ERR! A complete log of this run can be found in:</span><br><span class="line">npm ERR!     /Users/wdy/.npm/_logs/2018-09-27T08_44_47_443Z-debug.log</span><br></pre></td></tr></table></figure>
+<p>解决：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-depolyer-git</span><br><span class="line">npm install hexo --save</span><br><span class="line">hexo g</span><br><span class="line">npm install</span><br><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 
     </div>
     
@@ -262,7 +265,7 @@
     <div class="widget">
         <h3 class="title">文章目录</h3>
         
-            <p>暂无目录</p>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Error-ssh-exchange-identification-read-Connection-reset-by-peer"><span class="toc-text">Error: ssh_exchange_identification: read: Connection reset by peer</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo-d-命令报错ERROR-Deployer-not-found-git"><span class="toc-text">hexo d 命令报错ERROR Deployer not found: git</span></a></li></ol>
         
     </div>
 </aside>
